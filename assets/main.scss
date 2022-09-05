@@ -1,0 +1,123 @@
+@import "~bootstrap/scss/bootstrap";
+@import "font/stylesheet";
+@import "scss/header";
+@import "scss/intro";
+@import "scss/novelty";
+@import "scss/popular";
+@import "scss/dealer";
+@import "scss/news";
+@import "scss/watched";
+@import "scss/footer";
+@import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+@import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+
+
+body {
+  overflow-x: hidden;
+}
+
+.content {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.custom-btn {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  text-decoration: none;
+  max-width: 210px;
+  width: auto;
+
+  span {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    transition: all .3s;
+
+    path {
+      stroke: #fff
+    }
+
+  }
+
+  &.brown {
+    border: 1px solid #BCA877;
+
+    span {
+      color: #BCA877;
+    }
+
+    svg {
+      path {
+        stroke: #BCA877
+      }
+    }
+  }
+
+  &:hover {
+    svg {
+      margin-left: 17px;
+    }
+  }
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  .custom-btn {
+    height: 30px;
+    padding: 0 15px 0 20px;
+    max-width: 190px;
+
+    span {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 18px;
+
+      path {
+        stroke: #fff
+      }
+
+    }
+
+    &:hover {
+      svg {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .content {
+    padding: 0 15px;
+  }
+}
